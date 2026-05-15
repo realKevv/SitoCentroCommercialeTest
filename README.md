@@ -19,11 +19,13 @@ Il sito si compone di un minimo di due pagine web collegate tra loro:
 * **Variabili CSS utilizzate:**
     ```css
     :root {
-      --primary-color: #d1b44d;    /* Giallino di sfondo principale */
-      --secondary-color: #3e3e40;  /* Grigio scuro per pulsanti e testi importanti */
-      --text-color: #1a1a1a;       /* Nero morbido per testi leggibili */
-      --bg-light: #ffffff;         /* Bianco per sezioni di contrasto */
-      --gap-standard: 20px;        /* Spaziatura standard per la Grid */
+    --colore-primario: #dcb34e;      
+    --colore-primario-light: #ebd083; 
+    --colore-scuro: #3e3e40;          
+    --colore-testo: #1a1a1a;         
+    --colore-sfondo: #f9f8f3;         
+    --sfondo-card: #ffffff;          
+    --gap-griglia: 30px;             
     }
     ```
 

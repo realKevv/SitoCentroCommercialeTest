@@ -1,7 +1,124 @@
-    :root {
-      --primary-color: #d1b44d;    /* Giallino di sfondo principale */
-      --secondary-color: #3e3e40;  /* Grigio scuro per pulsanti e testi importanti */
-      --text-color: #1a1a1a;       /* Nero morbido per testi leggibili */
-      --bg-light: #ffffff;         /* Bianco per sezioni di contrasto */
-      --gap-standard: 20px;        /* Spaziatura standard per la Grid */
-    }
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap');
+
+:root {
+    --colore-primario: #dcb34e;
+    --colore-primario-light: #ebd083;
+    --colore-scuro: #3e3e40;
+    --colore-testo: #1a1a1a;
+    --colore-sfondo: #f9f8f3;
+    --sfondo-card: #ffffff;
+    --gap-griglia: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--colore-sfondo);
+    line-height: 1.6;
+}
+
+
+
+
+.navbar {
+    color: #dcb34e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--sfondo-card);
+    padding: 15px 50px;
+    position: sticky;
+    z-index: 100000;
+    top: 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--colore-scuro);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--colore-testo);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--colore-primario); 
+}
+
+/* HERO SECTION (SFONDO PRINCIPALE) */
+
+.hero {
+    height: 600px;
+    background-image:url(assets/img/SfondoPrincipale.jpg);
+    background-color: var(--colore-primario);
+    background-size: cover;       /* Scala l'immagine per coprire l'intera area */
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    text-align: center;
+    color: var(--colore-scuro);
+}
+
+.hero-content {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 700px;
+}
+
+.hero-content h1 {
+    font-family: 'Dancing Script', cursive; 
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+}
+
+.btn-disabled {
+    background-color: var(--colore-scuro);
+    color: white;
+    cursor: pointer;
+}
+
+.btn-card {
+    background-color: var(--colore-primario);
+    color: var(--colore-scuro);
+    margin-top: 15px;
+}
+
+.btn-card:hover {
+    background-color: var(--colore-scuro);
+    color: white;
+}
