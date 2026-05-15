@@ -1,0 +1,7 @@
+    :root {
+      --primary-color: #d1b44d;    /* Giallino di sfondo principale */
+      --secondary-color: #3e3e40;  /* Grigio scuro per pulsanti e testi importanti */
+      --text-color: #1a1a1a;       /* Nero morbido per testi leggibili */
+      --bg-light: #ffffff;         /* Bianco per sezioni di contrasto */
+      --gap-standard: 20px;        /* Spaziatura standard per la Grid */
+    }

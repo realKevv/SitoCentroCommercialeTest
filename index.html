@@ -1,12 +1,144 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> </title>
+    <title>Centro Commerciale - Spazi & Locali</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <div class="logo">CentroCommerciale</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#locali">Locali</a></li>
+                <li><a href="#attrazioni">Attrazioni</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Trova lo spazio perfetto per il tuo business</h1>
+                <p>Locali commerciali in affitto e vendita nel centro più vivo della città. Espandi il tuo brand con
+                    noi.</p>
+                <button class="btn btn-disabled">Scopri di più</button>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2>Dove ci troviamo & Cosa offriamo</h2>
+            <p>Il nostro centro commerciale si trova in una posizione strategica, facilmente raggiungibile e con ampio
+                parcheggio.</p>
+            <p>Attiriamo migliaia di visitatori ogni giorno grazie alle nostre principali <strong>attrazioni</strong>
+                come il cinema multisala, il parco giochi per bambini e tantissimi eventi settimanali.</p>
+        </section>
+
+        <section id="locali" class="grid-section">
+            <h2>I Nostri Locali Commerciali</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-img placeholder-img">Foto Locale 1</div>
+                    <div class="card-body">
+                        <h3>Locale Premium A1</h3>
+                        <p>120 mq - Posizione centrale vicino all'ingresso principale.</p>
+                        <a href="locali.html" class="btn btn-card">Vedi Dettagli</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img placeholder-img">Foto Locale 2</div>
+                    <div class="card-body">
+                        <h3>Spazio Food Court</h3>
+                        <p>85 mq - Attrezzato per attività di ristorazione e bar.</p>
+                        <a href="locali.html" class="btn btn-card">Vedi Dettagli</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img placeholder-img overlay-container">
+                        Foto Locale 3
+                        <div class="gallery-overlay">+3 Foto</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Ufficio / Showroom B5</h3>
+                        <p>200 mq - Ideale per uffici di rappresentanza o grandi esposizioni.</p>
+                        <a href="locali.html" class="btn btn-card">Vedi Dettagli</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="attrazioni" class="grid-section bg-light">
+            <h2>Le Nostre Attrazioni</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-img placeholder-img-att">Cinema</div>
+                    <div class="card-body">
+                        <h3>Cinema Multisala</h3>
+                        <p>6 sale con programmazione ed eventi nazionali ed internazionali.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img placeholder-img-att">Parco Giochi</div>
+                    <div class="card-body">
+                        <h3>Parco Giochi Bimbi</h3>
+                        <p>Un'area sicura e divertente dedicata all'intrattenimento delle famiglie.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img placeholder-img-att">Area Relax</div>
+                    <div class="card-body">
+                        <h3>Zona Food & Relax</h3>
+                        <p>Ampi spazi dedicati al relax con wifi gratuito e punti di ricarica.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contatti" class="form-section">
+            <h2>Richiedi Informazioni sui Locali</h2>
+            <p>Sei interessato ad aprire la tua attività? Lasciaci i tuoi dati e ti ricontatteremo.</p>
+
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="nome">Nome Completo / Azienda</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Inserisci il tuo nome">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email di Contatto</label>
+                    <input type="email" id="email" name="email" required placeholder="esempio@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo-locale">Spazio di interesse</label>
+                    <select id="tipo-locale" name="tipo-locale">
+                        <option value="negozio">Negozio Commerciale</option>
+                        <option value="ristorazione">Locale Ristorazione / Bar</option>
+                        <option value="ufficio">Ufficio / Showroom</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="messaggio">Note o Richieste Particolari</label>
+                    <textarea id="messaggio" name="messaggio" rows="4"
+                        placeholder="Scrivi qui i dettagli della tua richiesta..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-submit">Invia Candidatura</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Centro Commerciale S.p.A. - Tutti i diritti riservati.</p>
+    </footer>
+
 </body>
+
 </html>
