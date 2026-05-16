@@ -332,3 +332,30 @@ footer {
     text-align: center;
     padding: 25px 20px;
 }
+
+
+/*test media query */
+
+@media (max-width: 850px) {
+    /* La griglia passa da 3 colonne a 1*/
+    .card-grid {
+        grid-template-columns: 1fr; 
+    }
+    
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    /* I link del menu si mettono al centro e vanno a capo se serve */
+    .nav-links {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    /* Riduciamo un po' il font enorme del titolo sul telefono */
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
+}
