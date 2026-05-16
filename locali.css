@@ -1,3 +1,12 @@
+:root {
+    --primary-color: #d1b44d;    /* Giallino di sfondo principale */
+    --secondary-color: #3e3e40;  /* Grigio scuro per pulsanti e testi importanti */
+    --text-color: #1a1a1a;       /* Nero morbido per testi leggibili */
+    --bg-light: #ffffff;         /* Bianco per sezioni di contrasto */
+    --gap-standard: 20px;        /* Spaziatura standard per la Grid */
+}
+
+/* Reset generale */
 * {
     margin: 0;
     padding: 0;
@@ -6,38 +15,42 @@
 }
 
 body {
-    background-color: #d1b44d;
-    padding: 20px 0;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: var(--gap-standard) 0;
 }
 
-/* --- Intestazione --- */
+/*  Intestazione */
 .intro-section {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: calc(var(--gap-standard) * 2);
 }
 
 .intro-section h1 {
     font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 
 .intro-section p {
     font-size: 1.1rem;
     font-weight: 600;
+    color: var(--secondary-color);
 }
 
-/* --- Layout Card --- */
+/* Contenitore delle Card */
 .cards-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+    display: block;
 }
 
+/* Layout Singola Card */
 .card {
     display: flex;
+    align-items: center; 
+    margin: 0 auto calc(var(--gap-standard) * 2) auto;
+    padding: 0;
     width: 90%;
     max-width: 1000px;
     background-color: #fce270;
@@ -49,7 +62,9 @@ body {
 /* Area Immagine */
 .card-image {
     width: 65%;
-    background-color: #e0e0e0;
+    background-color: var(--bg-light);
+    height: 100%;
+    display: flex;
 }
 
 .card-image img {
@@ -63,48 +78,52 @@ body {
 .card-content {
     width: 35%;
     padding: 30px;
-    position: relative; 
+    position: relative;
     display: flex;
     flex-direction: column;
 }
 
 .card-content h3 {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-    color: #000;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
 }
 
 .card-content .descrizione {
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.4;
-    color: #333;
-    margin-bottom: 15px;
+    color: var(--text-color);
+    margin-bottom: 20px;
 }
 
 .card-content .prezzo {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
+    color: var(--text-color);
 }
 
+/* Pulsante Ovale */
 .btn-ovale {
     position: absolute;
     bottom: 20px; 
     right: 20px;  
-    background-color: #1a365d;
-    color: #ffffff; 
+    background-color: var(--secondary-color);
+    color: var(--bg-light); 
     text-decoration: none;
     padding: 10px 25px;
-    border-radius: 50px;
+    border-radius: 50px; 
     font-weight: bold;
     font-size: 0.95rem;
-    transition: background-color 0.3s ease;
+    transition: transform 0.2s, background-color 0.2s;
+    white-space: nowrap;
 }
 
 .btn-ovale:hover {
-    background-color: #0d1b2e; 
+    background-color: var(--text-color);
+    transform: scale(1.05);
 }
 
-/* Header e Footer vuoti (da mettere) */
+/* Header e Footer vuoti */
 header, footer {
     height: 60px;
     background-color: transparent;
