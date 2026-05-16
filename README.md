@@ -17,17 +17,15 @@ Il sito si compone di un minimo di due pagine web collegate tra loro:
 * **Tema Cromatico:** Il design segue una palette calda basata sul **giallino/oro** (come da mockup dell'immobile), bilanciata da toni scuri per i testi e i pulsanti principali per garantire un ottimo contrasto e accessibilità.
 
 Variabili CSS utilizzate:
-    ```css
     :root {
-    --colore-primario: #dcb34e;      
-    --colore-primario-light: #ebd083; 
-    --colore-scuro: #3e3e40;          
-    --colore-testo: #1a1a1a;         
-    --colore-sfondo: #f9f8f3;         
-    --sfondo-card: #ffffff;          
-    --gap-griglia: 30px;             
-    }
-    ```
+    --colore-primario: #dcb34e;
+    --colore-primario-light: #ebd083;
+    --colore-scuro: #3e3e40;
+    --colore-testo: #1a1a1a;
+    --colore-sfondo: #f9f8f3;
+    --sfondo-card: #ffffff;
+    --gap-griglia: 30px;
+}
 
 ---
 
@@ -48,20 +46,22 @@ Struttura delle Pagine (Dettaglio Componenti)
 **To-Do List** (Cose da fare per terminare il progetto)
 
 ### HTML & Struttura
-Creare il file `index.html` e impostare lo scheletro con i tag semantici (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`).
-Implementare la Navbar e la Hero Section con i relativi testi.
-Configurare la sezione descrittiva delle Attrazioni ed Eventi del centro commerciale.
-Inserire i blocchi delle Card (3 per i Locali, 3 per le Attrazioni, 3 per gli Eventi) con tag d'immagine segnaposto o reali.
-Creare il form di contatto a fine pagina per la raccolta dati dei potenziali clienti.
-Creare il secondo file `locali.html` strutturato per l'approfondimento immobiliare.
+- [x] Creare il file `index.html` e impostare lo scheletro con i tag semantici (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`).
+- [x] Implementare la Navbar e la Hero Section con i relativi testi.
+- [x] Configurare la sezione descrittiva delle Attrazioni ed Eventi del centro commerciale.
+- [x] Inserire i blocchi delle Card (3 per i Locali, 3 per le Attrazioni).
+- [x] Creare il form di contatto a fine pagina per la raccolta dati dei potenziali clienti.
+- [x] Creare il secondo file `locali.html` strutturato per l'approfondimento immobiliare.
+
 
 ### CSS & Stile
-Creare il file `style.css` e inizializzare le variabili CSS nel `:root` per il tema giallino e i font.
-Configurare il layout della Grid obbligatoria per le sezioni a 3 card, assicurando la responsività.
-Stilizzare i pulsanti (in particolare quello scuro con scritta bianca "*Scopri di più*").
-Associare i link corretti ai pulsanti delle card dei locali per fare in modo che puntino a `locali.html`.
+- [x] Creare il file `style.css` e locali.css inizializzare le variabili CSS nel `:root` per il tema giallino e i font.
+- [x] Configurare il layout della Grid obbligatoria per le sezioni a 3 card, assicurando la responsività.
+- [x] Stilizzare i pulsanti (in particolare quello scuro con scritta bianca "*Scopri di più*").
+- [x] Associare i link corretti ai pulsanti delle card dei locali per fare in modo che puntino a `locali.html`.
+
 
 ### Revisione e Consegna
-Commentare accuratamente ogni blocco di codice HTML e ogni regola CSS complessa (Requisito fondamentale del test).
-Verificare la corretta visualizzazione del layout della griglia.
-Effettuare il push finale del codice sul repository Git condiviso con i partner del progetto.
+- [ ] Commentare accuratamente ogni blocco di codice HTML e ogni regola CSS complessa (Requisito fondamentale del test).
+- [x] Verificare la corretta visualizzazione del layout della griglia.
+- [ ] Effettuare il push finale del codice sul repository Git condiviso con i partner del progetto.
