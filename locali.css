@@ -48,7 +48,7 @@ body {
 /* Layout Singola Card */
 .card {
     display: flex;
-    align-items: center; 
+    align-items: stretch; 
     margin: 0 auto calc(var(--gap-standard) * 2) auto;
     padding: 0;
     width: 90%;
@@ -63,8 +63,7 @@ body {
 .card-image {
     width: 65%;
     background-color: var(--bg-light);
-    height: 100%;
-    display: flex;
+    /* ho rimosso display flex per evitare conflitti con l'immagine in stretch */
 }
 
 .card-image img {
@@ -77,15 +76,18 @@ body {
 /* Area Testuale */
 .card-content {
     width: 35%;
-    padding: 30px;
+    padding: 40px 30px;
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start; 
 }
 
+/* Titolo della Card */
 .card-content h3 {
     font-size: 1.6rem;
-    margin-bottom: 15px;
+    margin-top: 0;
+    margin-bottom: 10px;
     color: var(--secondary-color);
 }
 
@@ -100,17 +102,18 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--text-color);
+    margin-top: 15px;
 }
 
 /* Pulsante Ovale */
 .btn-ovale {
     position: absolute;
-    bottom: 20px; 
-    right: 20px;  
+    bottom: 30px;
+    right: 30px;
     background-color: var(--secondary-color);
-    color: var(--bg-light); 
+    color: var(--bg-light);
     text-decoration: none;
-    padding: 10px 25px;
+    padding: 12px 28px;
     border-radius: 50px; 
     font-weight: bold;
     font-size: 0.95rem;
