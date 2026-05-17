@@ -35,7 +35,7 @@ Struttura delle Pagine (Dettaglio Componenti)
 1.  **Navbar:** Barra di navigazione superiore contenente il logo del centro commerciale e i link rapidi alle sezioni interne.
 2.  **Hero Section:** Sfondo principale con titolo principale (`<h1>`), breve testo descrittivo dell'opportunità di business e un pulsante d'azione "*Scopri di più*" (disabilitato temporaneamente o con link interno).
 3.  **Section Info ("Dove ci troviamo", "Eventi", "Attrazioni"):** Sezione testuale descrittiva che introduce i punti di forza strategici del centro (presenza di cinema, parco giochi e aree di intrattenimento per attirare pubblico).
-4.  **Sezione Locali Disponibili (Grid 3 Card):** Galleria fotografica disposta su griglia a 3 colonne che mostra i locali commerciali (ispirata al mockup fornito). Ogni card presenta un pulsante funzionante che reindirizza l'utente a `locali.html`.
+4.  **Sezione Locali Disponibili (Grid 3 Card):** Galleria fotografica disposta su griglia a 3 colonne che mostra i locali commerciali. Ogni card presenta un pulsante funzionante che reindirizza l'utente a `locali.html`.
 5.  **Sezione Attrazioni (Grid 3 Card):** Presentazione visiva dei servizi ancora presenti (Cinema, Parco Giochi, Area Food).
 6.  **Sezione Eventi (Grid 3 Card):** Prossimi eventi in programma nel centro commerciale per dimostrare il forte afflusso di clienti.
 7.  **Lead Generation Form:** Un form di contatto per richiedere informazioni o preventivi sui locali commerciali.
@@ -62,6 +62,6 @@ Struttura delle Pagine (Dettaglio Componenti)
 
 
 ### Revisione e Consegna
-- [ ] Commentare accuratamente ogni blocco di codice HTML e ogni regola CSS complessa (Requisito fondamentale del test).
+- [x] Commentare accuratamente ogni blocco di codice HTML e ogni regola CSS complessa (Requisito fondamentale del test).
 - [x] Verificare la corretta visualizzazione del layout della griglia.
 - [ ] Effettuare il push finale del codice sul repository Git condiviso con i partner del progetto.
